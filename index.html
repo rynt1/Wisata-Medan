@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Wisata Medan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            text-align: Justify;
+            font-family: 'Times New Roman', cursive;
+            background-color: #fffaf0; /* warm cream background */
+            color: #2c3e50; /* dark blue gray */
+        }
+        header {
+            background-color: #16424e; /* dark teal/navy alternative */
+            color: #f0f8ff; /* alice blue for text */
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(22, 66, 78, 0.7);
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px #0b242a;
+        }
+        header .logo img {
+            width: 50px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #72a0c1;
+        }
+        nav a {
+            color: #a3c4bc; /* soft moss green */
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        nav a.active,
+        nav a:hover {
+            color: #d9b310; /* warm golden-yellow accent */
+            text-shadow: 1px 1px 2px #7e6a12;
+        }
+        main {
+            display: flex;
+            padding: 30px 40px;
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+        #content {
+            flex: 3;
+        }
+        article.card {
+            background-color: #fdf6e3;
+            padding: 18px 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(24, 43, 65, 0.12);
+            transition: box-shadow 0.3s ease;
+        }
+        article.card:hover {
+            box-shadow: 0 0 25px rgba(203, 170, 25, 0.5);
+        }
+        article h2 {
+            font-size: 1.75rem;
+            color: #4b879e; /* teal */
+            margin-bottom: 12px;
+            letter-spacing: 1.7px;
+            text-transform: uppercase;
+        }
+        article p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+        .image-content {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(50, 50, 50, 0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+        .image-content:hover {
+            transform: scale(1.02);
+        }
+        aside {
+            flex: 1;
+            background-color: #dcedd2;
+            border-radius: 15px;
+            padding: 25px 30px;
+            box-shadow: 0 0 15px rgba(45, 80, 45, 0.2);
+            color: #2e4f31;
+            font-weight: 700;
+            text-align: center;
+        }
+        aside img.profile-image {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 15px #7ca87c;
+            margin-bottom: 20px;
+        }
+        aside h2 {
+            font-weight: 800;
+            font-size: 1.7rem;
+            margin-bottom: 18px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #3a5a40;
+        }
+        aside table {
+            width: 100%;
+            color: #264d26;
+            font-size: 1.05rem;
+            font-weight: 600;
+            border-collapse: collapse;
+        }
+        aside table tr {
+            border-bottom: 1px solid #aacbaa;
+        }
+        aside table td,
+        aside table th {
+            padding: 8px 0;
+            text-align: left;
+        }
+        aside table tr:last-child {
+            border-bottom: none;
+        }
+        footer {
+            background-color: #16424e;
+            color: #f0f8ff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        @media (max-width: 900px) {
+            main {
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+            aside {
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://img.freepik.com/vecteurs-premium/medan-indonesie-drapeau-voyage-souvenir-autocollant-skyline-logo-badge-timbre-sceau-embleme-vecteur-svg-eps_669574-313.jpg" alt="Logo Wisata">
+            Wisata Medan
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="geopark" class="card">
+                <h2>Geopark Kaldera Toba</h2>
+                <img
+                    src="https://tobaparapat.com/assets/gambar/artikel/20240110101811.jpg"
+                    alt="Geopark Kaldera Toba"
+                    class="image-content"
+                />
+                <p>
+                    Geopark Kaldera Toba merupakan sebuah kawasan yang diakui oleh UNESCO sebagai bagian dari Global Geoparks Network. Kawasan ini mencakup Danau Toba dan sekitarnya, termasuk Parapat, yang menawarkan pemandangan alam yang menakjubkan dan keanekaragaman hayati yang luar biasa. Kaldera Toba sendiri terbentuk dari letusan gunung berapi supervulkan sekitar 74.000 tahun yang lalu, yang menghasilkan danau vulkanik terbesar di dunia.
+                </p>
+            </article>
+            <article id="pantai" class="card">
+                <h2>Pantai Gawu Soyo</h2>
+                <img
+                    src="https://salsawisata.com/wp-content/uploads/2022/02/pantai-mutiara-medan.jpg"
+                    alt="Pantai Gawu Soyo"
+                    class="image-content"
+                />
+                <p>
+                    Pantai Mutiara, yang terletak di Kabupaten Serdang Bedagai, Sumatera Utara, adalah salah satu destinasi wisata yang menawarkan keindahan alam dan suasana pantai yang menyegarkan. Terletak sekitar 43 km dari Kota Medan, Pantai Mutiara menjadi pilihan yang sempurna untuk melarikan diri dari hiruk-pikuk kota dan menikmati kedamaian serta keindahan alam yang luar biasa. Pantai Mutiara dikenal dengan pemandangan alamnya yang menawan. Dengan pasir putih yang halus dan air laut yang jernih, pantai ini menawarkan suasana tropis yang nyaman. Garis pantai yang panjang dan landai membuatnya menjadi tempat yang ideal untuk berjalan-jalan di tepi laut, bermain air, atau hanya duduk santai menikmati angin laut yang sejuk. Salah satu daya tarik utama Pantai Mutiara adalah pemandangan matahari terbit (sunrise) yang begitu menakjubkan. Pengunjung dapat menyaksikan langit yang perlahan berubah warna dari biru ke oranye dan merah muda, menciptakan pemandangan yang memukau di pagi hari. Sementara itu, saat matahari terbenam, panorama sunset di pantai ini juga tak kalah indah, memberikan pengalaman yang tak terlupakan bagi para wisatawan.
+                </p>
+            </article>
+            <article id="curug" class="card">
+                <h2>Air Terjun Sampuren Putih</h2>
+                <img
+                    src="https://blogger.googleusercontent.com/img/a/AVvXsEipr2a5_nAukb44viKc_it3Z9kqco0Dz_tz4bxnRsPFfsrSX0U5KajMGoAVQbW51ovpMpK-2ngUiGaaMpmBWJDqDGLFyVkSjE5KAvD-ICqIgXtu2k-vaBKMXqud-4nD5qvUDaQqcDoNOGOHGqgXuPgg9Wejkl0SJtsN4MDFmehjipWSzcxUXoYHIAo4=s16000"
+                    alt="Air Terjun Sampuren Putih"
+                    class="image-content"
+                />
+                <p>
+                    Air Terjun Sampuren Putih menjadi salah satu ikon alami di Sumatra Utara, khususnya di Kecamatan Simanindo, Kabupaten Samosir. Air terjun ini terkenal karena formasi berbatu yang unik dan aliran airnya yang jernih. Saat air terjun mengalir turun, ia menciptakan percikan yang menghasilkan pelangi indah ketika sinar matahari menerpa air. Pemandangan ini menjadi daya tarik tersendiri bagi para wisatawan yang datang untuk berfoto dan menikmati panorama alam yang memesona. Hutan di sekitar Air Terjun Sampuren Putih juga menjadi rumah bagi berbagai spesies flora dan fauna. Keberadaan vegetasi hijau lebat membuat suasana sekeliling semakin sejuk dan nyaman. Berjalan menyusuri jalur yang mengarah ke air terjun, pengunjung akan disuguhi pemandangan alam yang menenangkan, dengan suara burung dan gemericik air menyegarkan jiwa. Keindahan alam ini membuat Air Terjun Sampuren Putih layak dijuluki sebagai salah satu surga tersembunyi di Sumatra Utara.
+                </p>
+            </article>
+            <article id="goa" class="card">
+                <h2>Danau Toba</h2>
+                <img
+                    src="https://api2.kemenparekraf.go.id/storage/app/resources/PARIWISATA_STORYNOMICS_TOURISM_shutterstock_385096972_franshendrik_Tambunan_d03d3440db.jpg"
+                    alt="Danau Toba"
+                    class="image-content"
+                />
+                <p>
+                    Danau Toba adalah danau vulkanik terbesar di dunia yang terletak di Sumatera Utara, Indonesia. Danau Toba terbentuk dari letusan supervulkan Gunung Toba yang terjadi sekitar 74.000 tahun yang lalu. Letusan ini merupakan salah satu yang terbesar dalam sejarah Bumi, dengan skala Volcanic Explosivity Index (VEI) mencapai 8. Letusan ini mengeluarkan sekitar 2.800 km³ material vulkanik, yang menyebabkan perubahan iklim global dan penurunan populasi manusia pada masa itu.
+                </p>
+            </article>
+            <article id="kampung" class="card">
+                <h2>The Le Hu Garden</h2>
+                <img
+                    src="https://www.tiketmasuk.com/wp-content/uploads/2023/11/The-Le-Hu-Garden-768x432.jpg"
+                    alt="The Le Hu Garden"
+                    class="image-content"
+                />
+                <p>
+                    The Le Hu Garden merupakan destinasi wisata keluarga yang mengusung konsep taman bunga di sekitar kota Medan. Terletak di pinggiran kota Medan, tepatnya di antara perbatasan Marindal, Patumbak, dan Deli Tua, taman ini menawarkan suasana alami yang seakan-akan membawa kita ke pedesaan. Selain menjadi ruang terbuka yang luas, The Le Hu Garden juga dilengkapi dengan berbagai fasilitas yang memanjakan para pengunjung. Tersedia kafe dan pondok yang dapat disewa, sehingga pengunjung dapat menikmati makanan dan minuman yang lezat sambil menikmati keindahan taman. Dengan banyaknya pilihan tempat yang tersedia, pengunjung dapat menjelajahi area taman dengan santai. The Le Hu Garden adalah tempat yang sangat direkomendasikan bagi mereka yang ingin merasakan atmosfer pedesaan di sekitar kota Medan tanpa harus melakukan perjalanan jauh ke desa.
+                </p>
+            </article>
+        </div>
+        <aside>
+            <article class="profile card">
+                <img
+                    src="https://i.ibb.co/Rk7fQfz1/f8f9d8cb-5d93-461a-a9d2-275ed9fd7dd7.jpg"
+                    alt="Ira Yanti"
+                    class="profile-image"
+                />
+                <h2>Informasi Pribadi</h2>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>: Ira Yanti</td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>: Tangerang Kota</td>
+                    </tr>
+                    <tr>
+                        <td>Domisili</td>
+                        <td>: Cipondoh</td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td>: Admin</td>
+                    </tr>
+                </table>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        &copy; 2025 Portofolio Wisata Medan - Ira Yanti
+    </footer>
+    <script>
+        // Basic JS to add zoom modal for images (optional)
+        const images = document.querySelectorAll('.image-content');
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+                const modal = document.createElement('div');
+                modal.style.position = 'fixed';
+                modal.style.top = '0';
+                modal.style.left = '0';
+                modal.style.width = '100vw';
+                modal.style.height = '100vh';
+                modal.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                modal.style.display = 'flex';
+                modal.style.justifyContent = 'center';
+                modal.style.alignItems = 'center';
+                modal.style.cursor = 'zoom-out';
+                modal.style.zIndex = '10000';
+
+                const largeImg = document.createElement('img');
+                largeImg.src = img.src;
+                largeImg.style.maxWidth = '90%';
+                largeImg.style.maxHeight = '90%';
+                largeImg.style.borderRadius = '15px';
+                largeImg.style.boxShadow = '0 0 20px white';
+
+                modal.appendChild(largeImg);
+                document.body.appendChild(modal);
+
+                modal.addEventListener('click', () => {
+                    document.body.removeChild(modal);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
